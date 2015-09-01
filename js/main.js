@@ -304,6 +304,10 @@ $(function(){
     $(".left-inner a i").click(function(){
         var that = $(this);
         var tag = that.attr('data-tag');
+        if(tag == 'section-3'){
+            window.location.href = 'https://github.com/ForeverPx';
+            return;
+        }
         clearTimeout(nextMovingTimeout);
         if(curMovingSection){
             if(curMovingSection != tag){
